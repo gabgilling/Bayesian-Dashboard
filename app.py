@@ -6,6 +6,7 @@ import dash_core_components as dcc
 from dash.exceptions import PreventUpdate
 from dash_html_components.Textarea import Textarea
 
+# edits
 
 import numpy as np
 import plotly.express as px
@@ -77,7 +78,6 @@ app.layout = html.Div([
     ]
 )
 def update_figure(value1, value2, value3):
-
     if value3 is None or value2 is None or value3 < 0 or value1 < 1 or isinstance(value1, float):
         raise PreventUpdate
     else:
